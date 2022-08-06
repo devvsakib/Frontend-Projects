@@ -1,16 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page Design</title>
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <style>
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+
+    }
+
+    body {
+      background: hsl(30, 38%, 92%);
+    }
+
+    .container-fluid {
+      width: 1440px;
+    }
+
+    .mainContainer {
+      width: 600px;
+      height: 450px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+      border-radius: 10px;
+      background: hsl(0, 0%, 100%);
+    }
+
+    .leftcontainer {
+      width: 50%;
+    }
+
+    .rightcontainer p:first-child {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .leftcontainer img {
+      height: 450px;
+      /* width: 50%; */
+      border-radius: 10px 0 0 10px;
+    }
+
+    .hideMobile {
+      display: none;
+    }
+
+    .rightcontainer {
+      width: 50%;
+      padding: 0 35px;
+    }
+
+    .rightcontainer h2 {
+      font-family: 'Fraunces';
+      font-weight: 700;
+    }
+
+    .rightcontainer .price {
+      display: flex;
+      align-items: center;
+    }
+
+    .rightcontainer .price h2 {
+      font-family: 'Fraunces';
+      font-weight: 700;
+      display: inline;
+      color: #3c8067;
+      /* font-family: Montserrat; */
+      font-family: Fraunces;
+    }
+
+    .rightcontainer .price span {
+      font-family: Montserrat;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      display: inline;
+      text-decoration: line-through;
+      margin-left: 10px;
+      margin-top: -10px;
+      font-size: 14px;
+    }
+
+    .rightcontainer .cart {
+      font-family: Montserrat;
+      display: block;
+      border: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-weight: 500;
+      color: hsl(0, 0%, 100%);
+      background: #3c8067;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .rightcontainer .cart:hover {
+      background: #184131;
+    }
+
+    /* 
+
+Responsive for mobile 
+
+*/
+
+    @media (max-width: 375px) {
+      .container-fluid {
+        width: 320px;
+        padding: 0;
+      }
+
+      .mainContainer {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      img {
+        display: none;
+      }
+
+      .hideMobile {
+        display: block;
+      }
+
+      .leftcontainer {
+        display: block;
+        width: 100%;
+      }
+
+      .leftcontainer img {
+        height: 200px;
+        width: 100%;
+        border-radius: 0;
+      }
+
+      .rightcontainer {
+        width: 100%;
+        padding: 20px 20px;
+      }
+
+      .rightcontainer p:first-child {
+        margin-bottom: 5px;
+      }
+
+      .rightcontainer h2 {
+        font-size: 30px;
+      }
+
+      .rightcontainer .price h2 {
+        font-size: 36px;
+      }
+
+      .rightcontainer .cart {
+        margin-top: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
   <section class="container-fluid">
@@ -22,14 +199,19 @@
       <div class="rightcontainer">
         <p>perfume</p>
         <h2>Gabrielle Essence Eau De Perfum</h2>
-        <p>A floral, solar and voluptous interpretation composed by Olivier POlge, Perfumer-Creattor for the House of CHANEL.</p>
+        <p>A floral, solar and voluptous interpretation composed by Olivier POlge, Perfumer-Creattor for the House of
+          CHANEL.</p>
         <div class="price">
           <h2>$149.99</h2>
           <span>$169.99</span>
         </div>
         <button class="cart">Add to Cart</button>
       </div>
-      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+      <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+          fill="#FFF" />
+      </svg>
 
     </div>
   </section>
@@ -37,4 +219,5 @@
 
 
 </body>
+
 </html>
