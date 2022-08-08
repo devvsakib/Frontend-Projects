@@ -14,7 +14,20 @@ body {
     background: hsl(30, 38%, 92%);
 }
 
-.container-fluid {
+.topHeader {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Fraunces';
+
+}
+.topHeader span{
+    display: block;
+    text-align: right;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    
 }
 
 .mainContainer {
@@ -23,9 +36,10 @@ body {
     margin: auto;
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
     background: hsl(0, 0%, 100%);
+    margin-bottom: 50px;
 }
 
 .leftcontainer {
