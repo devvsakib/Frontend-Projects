@@ -33,6 +33,7 @@ body {
 .left_content {
     margin-bottom: 50px;
     height: 70vh;
+    position: relative;
 
     .crew_content {
         margin-top: 50px;
@@ -64,6 +65,9 @@ body {
     }
 
     .crewTabBtn {
+        position: fixed;
+        top: 80%;
+        left: 9.5%;
         width: 110px;
         display: flex;
         justify-content: space-between;
