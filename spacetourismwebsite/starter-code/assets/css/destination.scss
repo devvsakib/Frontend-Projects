@@ -64,15 +64,16 @@ body {
                 background-color: var(--white);
                 transform: scaleX(0);
                 opacity: 0;
-                transition: all 250ms  ease-in-out;
+                transition: all 250ms ease-in-out;
             }
 
-            
+
             &:hover {
-                a{
+                a {
                     color: var(--fog);
                 }
-                a:before{
+
+                a:before {
                     background-color: var(--fog);
                     transform: scaleX(1);
                     opacity: 1;
@@ -125,7 +126,9 @@ body {
 }
 
 @media (max-width: 800px) {
-    .right_content .tab-nav li, .right_content .tab-details li {
-        margin-right: 19px ;
+
+    .right_content .tab-nav li,
+    .right_content .tab-details li {
+        margin-right: 19px;
     }
 }

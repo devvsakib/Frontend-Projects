@@ -106,7 +106,8 @@ body {
 }
 
 @media (max-width: 800px) {
-  .right_content .tab-nav li, .right_content .tab-details li {
+  .right_content .tab-nav li,
+.right_content .tab-details li {
     margin-right: 19px;
   }
 }/*# sourceMappingURL=destination.css.map */
