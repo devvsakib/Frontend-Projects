@@ -4,9 +4,8 @@ const tabs = document.querySelectorAll('.tab'),
     desPara = document.querySelector('.des-para'),
     desDis = document.querySelector('.des-dis'),
     desTime = document.querySelector('.des-time')
-
 // Fetch data from JSON
-url = "/starter-code/data.json"
+url = "../data.json"
 fetch(url)
     .then(res => res.json())
     .then(
@@ -14,6 +13,7 @@ fetch(url)
             tabs.forEach(el => {
                 el.addEventListener('click', () => {
                     const tabVal = el.value
+                    console.log(tabVal)
                     tabImg.src = `${data.destinations[tabVal].images.png}`;
                     desHeader.innerText = data.destinations[tabVal].name
                     desPara.innerText = data.destinations[tabVal].description
@@ -24,7 +24,6 @@ fetch(url)
         }
     )
     .catch(function (err) {
-        // some error here
         console.log(err);
     });
 // Get all tab acccess
