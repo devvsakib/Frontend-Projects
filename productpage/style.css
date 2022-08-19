@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 img {
     max-width: 100%;
 }
@@ -350,4 +351,169 @@ Responsive for mobile
     .rightcontainer .cart {
         margin-top: 20px;
     }
+=======
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+}
+
+.container-fluid {
+    width: 1440px;
+}
+
+.mainContainer {
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+}
+
+.leftcontainer {
+    width: 50%;
+}
+
+.rightcontainer p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.leftcontainer img {
+    height: 450px;
+    /* width: 50%; */
+    border-radius: 10px 0 0 10px;
+}
+
+.hideMobile {
+    display: none;
+}
+
+.rightcontainer {
+    width: 50%;
+    padding: 0 35px;
+}
+
+.rightcontainer h2 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.rightcontainer .price {
+    display: flex;
+    align-items: center;
+}
+
+.rightcontainer .price h2 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    display: inline;
+    color: #3c8067;
+    /* font-family: Montserrat; */
+    font-family: Fraunces;
+}
+
+.rightcontainer .price span {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    display: inline;
+    text-decoration: line-through;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.rightcontainer .cart {
+    font-family: Montserrat;
+    display: block;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    background: #3c8067;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.rightcontainer .cart:hover {
+    background: #184131;
+}
+
+/* 
+
+Responsive for mobile 
+
+*/
+
+@media (max-width: 375px) {
+    .container-fluid {
+        width: 320px;
+        padding: 0;
+    }
+
+    .mainContainer {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    img {
+        display: none;
+    }
+
+    .hideMobile {
+        display: block;
+    }
+
+    .leftcontainer {
+        display: block;
+        width: 100%;
+    }
+
+    .leftcontainer img {
+        height: 200px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .rightcontainer {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .rightcontainer p:first-child {
+        margin-bottom: 5px;
+    }
+
+    .rightcontainer h2 {
+        font-size: 30px;
+    }
+
+    .rightcontainer .price h2 {
+        font-size: 36px;
+    }
+
+    .rightcontainer .cart {
+        margin-top: 20px;
+    }
+>>>>>>> main
 }
