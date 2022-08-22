@@ -2,4 +2,4 @@
 
 ## Feel free to use this repo. Keep practice
 
-### REMBER: # Practice Make Perfect
+# REMEMBER: Practice Make Perfect
