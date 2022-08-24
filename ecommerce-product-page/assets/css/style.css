@@ -181,5 +181,99 @@ img {
 }
 
 .showoff {
-  display: block !important;
+  display: block;
+}
+
+/*========== Product Secion CSS ==========*/
+.contWid {
+  width: 1080px;
+}
+
+.prod_img {
+  width: 410px;
+}
+.prod_img .more_img img {
+  width: 80px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.prod_img .more_img img:first-child {
+  border: 2px solid var(--color-orange);
+}
+
+.prev_img img {
+  width: 420px;
+  border-radius: 10px;
+}
+
+.prod_details h5 {
+  text-transform: uppercase;
+  color: var(--color-orange);
+  font-weight: var(--font-bold);
+  font-size: 16px;
+}
+.prod_details h1 {
+  font-weight: var(--font-bold);
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.prod_details p {
+  font-weight: 500;
+  color: var(--dark_grayish_blue);
+}
+.prod_details .prod_price {
+  display: flex;
+  align-items: center;
+}
+.prod_details .prod_price h3 {
+  font-weight: var(--font-bold);
+}
+.prod_details .prod_price span {
+  color: var(--color-orange);
+  background-color: var(--color-pale-orage);
+  margin-left: 20px;
+  padding: 0 10px;
+  font-weight: var(--font-bold);
+  border-radius: 5px;
+}
+.prod_details .prod_main_price h4 {
+  font-size: 16px;
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+  font-weight: var(--font-bold);
+}
+.prod_details .cart_buttons .quantity_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue);
+  font-weight: var(--font-bold);
+}
+.prod_details .cart_buttons .quantity_btns #prod_decrease,
+.prod_details .cart_buttons .quantity_btns #prod_increase {
+  font-weight: 700;
+  color: var(--color-orange);
+  cursor: pointer;
+  padding: 10px;
+}
+.prod_details .cart_buttons .add_to_cart {
+  width: calc(100% - 150px);
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-orange);
+  padding: 15px 50px;
+  color: var(--white);
+  font-weight: var(--font-bold);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.prod_details .cart_buttons .add_to_cart p {
+  margin-left: 10px;
+  color: var(--white);
 }/*# sourceMappingURL=style.css.map */
