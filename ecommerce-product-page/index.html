@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="devvsakib xavonsakib">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page | devvsakib</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="row nav">
+      <div class="col-2">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="menuContainer">
+          <ul>
+            <li><a href="#">collections</a></li>
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="prof">
+          <div class="account_profile d-flex align-items-center justify-content-between">
+            <i onclick="showOff()" class="fa fa-cart-shopping" aria-hidden="true"></i>
+            <img onclick="showOff()" calss="pp" src="./assets/images/image-avatar.png" alt="">
+          </div>
+          <div id="cart_items" class="cart_items">
+            <div class="cart_title">
+              <h2>Cart</h2>
+            </div>
+            <div class="items">
+              <div class="item_img">
+                <img src="./assets/images/image-product-1.jpg" alt="">
+              </div>
+              <div class="item_des">
+                <div class="item_title">
+                  <h5>Fall Limited Edition Sneakers</h5>
+                </div>
+                <div class="item_quantity">
+                  <span>$125.00 x 3 <span class="" bold_price>$375.00</span></span>
+                </div>
+              </div>
+              <div class="item_delete">
+                <i class="fa-solid fa-trash"></i>
+              </div>
+            </div>
+            <div class="cart_btn">
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
