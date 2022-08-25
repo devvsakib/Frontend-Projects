@@ -196,14 +196,18 @@ img {
   width: 80px;
   border-radius: 10px;
   margin-right: 30px;
-}
-.prod_img .more_img img:first-child {
-  border: 2px solid var(--color-orange);
+  position: relative;
+  cursor: pointer;
 }
 
 .prev_img img {
   width: 420px;
   border-radius: 10px;
+}
+
+.active {
+  opacity: 0.75;
+  border: 2px solid var(--color-orange);
 }
 
 .prod_details h5 {
@@ -260,6 +264,10 @@ img {
   color: var(--color-orange);
   cursor: pointer;
   padding: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .prod_details .cart_buttons .add_to_cart {
   width: calc(100% - 150px);

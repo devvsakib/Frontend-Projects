@@ -237,10 +237,8 @@ img {
             width: 80px;
             border-radius: 10px;
             margin-right: 30px;
-
-            &:first-child {
-                border: 2px solid var(--color-orange);
-            }
+            position: relative;
+            cursor: pointer;
         }
     }
 }
@@ -251,7 +249,10 @@ img {
         border-radius: 10px;
     }
 }
-
+.active{
+    opacity: .75;
+    border: 2px solid var(--color-orange);
+}
 .prod_details {
     h5 {
         text-transform: uppercase;
@@ -317,6 +318,7 @@ img {
                 color: var(--color-orange);
                 cursor: pointer;
                 padding: 10px;
+                user-select: none;
             }
         }
 

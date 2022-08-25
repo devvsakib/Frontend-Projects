@@ -49,26 +49,12 @@
           <div id="cart_items" class="cart_items">
             <div class="cart_title">
               <h2>Cart</h2>
+          </div>
+          <div class="item_des">
+            <div class="item_title mt-3">
+              <h5>Your cart is emplty!</h5>
             </div>
-            <div class="items">
-              <div class="item_img">
-                <img src="./assets/images/image-product-1.jpg" alt="">
-              </div>
-              <div class="item_des">
-                <div class="item_title">
-                  <h5>Fall Limited Edition Sneakers</h5>
-                </div>
-                <div class="item_quantity">
-                  <span>$125.00 x 3 <span class="" bold_price>$375.00</span></span>
-                </div>
-              </div>
-              <div class="item_delete">
-                <i class="fa-solid fa-trash"></i>
-              </div>
-            </div>
-            <div class="cart_btn">
-              <button>Checkout</button>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -81,14 +67,14 @@
       <div class="col-6">
         <div class="prod_img">
           <div class="prev_img">
-            <img src="./assets/images/image-product-1.jpg" alt="">
+            <img id="prev_img" src="./assets/images/image-product-1.jpg" alt="">
           </div>
-          <div class="mt-4 more_img d-flex justify-content-between">
-            <img src="./assets/images/image-product-1.jpg" alt="">
-            <img src="./assets/images/image-product-2.jpg" alt="">
-            <img src="./assets/images/image-product-3.jpg" alt="">
-            <img src="./assets/images/image-product-4.jpg" alt="">
-            <img src="./assets/images/image-product-5.jpg" alt="">
+          <div id="more_img" class="mt-4 more_img d-flex justify-content-between">
+            <img class="active for_prev_demo bg_prod"  src="./assets/images/image-product-1.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-2.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-3.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-4.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-5.jpg" alt="">
           </div>
         </div>
       </div>
@@ -107,11 +93,11 @@
           </div>
           <div class="cart_buttons mt-5 d-flex">
             <div class="quantity_btns">
-              <span id="prod_increase">+</span>
+              <span id="prod_increase" disabled>+</span>
               <span id="prod_quanty">0</span>
               <span id="prod_decrease">-</span>
             </div>
-            <div class="add_to_cart align-items-center d-flex">
+            <div  id="add_to_cart" class="add_to_cart align-items-center d-flex">
               <i class="fa fa-cart-shopping" aria-hidden="true"></i>
               <p>Add to cart</p>
             </div>
