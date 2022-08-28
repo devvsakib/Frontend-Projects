@@ -43,6 +43,7 @@
       <div class="col-2">
         <div class="prof">
           <div class="account_profile d-flex align-items-center justify-content-between">
+            <p id="qualty_number"></p>
             <i onclick="showOff()" class="fa fa-cart-shopping" aria-hidden="true"></i>
             <img onclick="showOff()" calss="pp" src="./assets/images/image-avatar.png" alt="">
           </div>
@@ -62,9 +63,9 @@
   </div>
   <!-- Navbar DOne -->
   <!-- Product Section -->
-  <div class="container contWid mt-auto">
-    <div class="row mt-4 align-items-center">
-      <div class="col-6">
+  <div class="container contWid mt-auto align-items-center">
+    <div class="row flex-sm-column flex-lg-row  mt-4 align-items-sm-center prod align-items-center">
+      <div class="col-6 prod_prev_con">
         <div class="prod_img">
           <div class="prev_img">
             <img id="prev_img" src="./assets/images/image-product-1.jpg" alt="">
@@ -78,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-6 mt-md-5">
         <div class="prod_details">
           <h5>sneakers company</h5>
           <h1 class="mt-2">Fall limited edition sneakers</h1>
@@ -94,7 +95,7 @@
           <div class="cart_buttons mt-5 d-flex">
             <div class="quantity_btns">
               <span id="prod_increase" disabled>+</span>
-              <span id="prod_quanty">0</span>
+              <span id="prod_quanty">1</span>
               <span id="prod_decrease">-</span>
             </div>
             <div  id="add_to_cart" class="add_to_cart align-items-center d-flex">

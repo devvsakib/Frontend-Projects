@@ -64,6 +64,9 @@ img {
 }
 
 .menuContainer {
+    @media (max-width: 776px) {
+        display: none;
+    }
     ul {
         display: flex;
 
@@ -106,12 +109,32 @@ img {
 
     .account_profile {
         width: 90px;
+        
+        #qualty_number{
+            z-index: 99;
+            position: absolute;
+            top: 0px;
+            right: 3.6rem;
+            display: none;
+            bottom: 0;
+            background-color: red;
+            width: 18px;
+            height: 18px;
+            line-height: 12px;
+            letter-spacing: 1.5px;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 50%;
+            font-size: 12px;
+            color: white;
+            border: 2px solid white;
+        }
 
-        i {
+        i{
+            position: relative;
             font-size: 17px;
             color: var(--dark_grayish_blue);
             transition: all .3s ease-in-out;
-
             &:hover {
                 color: var(--black);
                 cursor: pointer;
@@ -223,12 +246,26 @@ img {
 .showoff {
     display: block;
 }
-
+.dnone{
+    display: block;
+}
 /*========== Product Secion CSS ==========*/
 .contWid {
     width: 1080px;
+    
+    @media (max-width: 575px) {
+        display: contents;
+        align-items: center;
+    }
 }
+.prod{
+}
+.prod_prev_con{
+    @media (max-width: 900px) {
+        display: contents;
+    }
 
+}
 .prod_img {
     width: 410px;
 
