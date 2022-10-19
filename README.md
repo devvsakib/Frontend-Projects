@@ -1,6 +1,15 @@
-# Hacktoberfest 2022
-# All Project for Frontend Developer
+## Hacktoberfest 2022
+# Welcome to Frontend Project Repo
 
-## Feel free to use this repo. Keep practice
+### Here you will find every esssetial PROJECT for a beginner Frontend Web Developer
 
-# REMEMBER: Practice Make Perfect
+### You must have acknowledge about 
+	1. HTML
+	2. CSS
+	3. Any Framework
+	4. Javascript
+
+###  Everything is Free to use.
+
+Hope You will Like it!
+You Champ
