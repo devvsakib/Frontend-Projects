@@ -11,7 +11,7 @@ recognition.onresult = function(event){
   document.getElementById("result").innerHTML = text;  
 }  
 function copyDivToClipboard() {  
-  var range = document.createRange();  
+  let range = document.createRange();  
   range.selectNode(document.getElementById("result"));  
   window.getSelection().removeAllRanges(); // clear current selection  
   window.getSelection().addRange(range); // to select text  
