@@ -3,7 +3,7 @@ body {
 }
 
 .s1 {
-    background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('./background.jpg') bottom/cover fixed no-repeat;
+    background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('/images/background.jpg') bottom/cover fixed no-repeat;
     position: relative;
     height: 60vh;
     width: 100%;

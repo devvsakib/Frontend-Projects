@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 .s1{
-    background: linear-gradient(rgba(4, 9, 30, 0.5),rgba(4, 9, 30, 0.5)),url('./banner.png') center fixed no-repeat; 
+    background: linear-gradient(rgba(4, 9, 30, 0.5),rgba(4, 9, 30, 0.5)),url('/images/banner.png') center fixed no-repeat; 
     position: relative;
     min-height: 40rem;
 }
