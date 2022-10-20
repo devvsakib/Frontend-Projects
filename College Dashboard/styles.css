@@ -1,0 +1,25 @@
+body, html, .container-fluid, .sidebar, .body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav.flex-column {
+    background-color: rgb(230,230,230);
+}
+
+.col-sm {
+    width: 25vw;
+    max-width: 25%;
+}
+
+table tr {
+    height: 175px;
+}
