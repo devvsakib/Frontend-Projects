@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINGH FITNESS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS Reset */
+      body {
+        font-family: "Baloo Bhaina 2", cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img-1.jpg");
+        background-size: 1528px 971px;
+        background-repeat: no-repeat;
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+      }
+      .left img {
+        margin-left: 15px;
+        width: 120px;
+        height: 80px;
+        filter: invert(95%);
+      }
+      .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 22px;
+      }
+      .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 33px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+      }
+      .btn {
+        font-family: "Baloo Bhaina 2", cursive;
+        background-color: black;
+        color: white;
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: rgb(29, 27, 27);
+      }
+      .container {
+        border: 2px solid white;
+        margin: 80px 800px;
+        padding: 75px;
+        border-radius: 28px;
+        width: 33%;
+      }
+      .formgroup input {
+        font-family: "Baloo Bhaina 2", cursive;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        font-family: "Baloo Bhaina 2", cursive;
+        font-size: 23px;
+        display: block;
+        width: 101%;
+        margin: auto;
+      }
+      .container .gender {
+        font-family: "Baloo Bhaina 2", cursive;
+        font-size: 24px;
+        display: inline-block;
+        margin: 1px 3px;
+        padding: 4px 113px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img
+          src="https://media.istockphoto.com/vectors/weights-symbol-icon-black-realistic-dumbbell-outline-isolated-vector-vector-id1130190308"
+          alt=""
+        />
+        <div>SINGH FITNESS</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="#">FITNESS CENTER</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join India's Best Gym Now</h1>
+      <form action="backend.php">
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Email" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your Phone number" />
+        </div>
+        <div class="gender">
+          <input type="radio" name="mygender" value="male" />Male
+          <input type="radio" name="mygender" value="female" />Female
+          <input type="radio" name="mygender" value="other" /> Other
+        </div>
+        <button class="btn">Submit Now</button>
+      </form>
+    </div>
+  </body>
+</html>
