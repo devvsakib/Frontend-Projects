@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="container">          
+
+            <div class="header">
+                <div class="title">
+                    devfinder_
+                </div>
+                <div class="themes">
+                    <label class="switch">
+                        <input id="theme-slider" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <img src="Images/search-icon.svg" alt="">
+                <input id="search-bar-text" type="search" placeholder="Search github username...">
+                <div id="submit-search" class="search-btn">
+                    Search
+                </div>
+            </div>
+
+            <div class="dev-info">
+                <div class="dev-info-left">
+                    <img id="profile-photo" src="Images/profile-photo-icon.svg" alt="">
+                </div>
+                
+                <div class="dev-info-right">
+                    <div class="dev-info-title">
+                        <div class="dev-name">
+                            <span id="dev-name">
+                                Firstname Lastname
+                            </span>
+                        </div>
+                        <div class="dev-join">
+                            <span id="joining-date">
+                                Joined DD MM YYYY
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dev-userid">
+                        <a id="username-link" href="https://github.com" target="_blank">
+                            @username
+                        </a>
+                    </div>
+                    <div class="dev-bio">
+                        Bio of the username you searched
+                    </div>
+                    <div class="dev-stats">
+                        <div class="dev-stat-value">
+                            <p class="dev-stat-title">Repos</p>
+                            <p id="repo-count" class="dev-stat-num">0</p>
+                        </div>
+                        <div class="dev-stat-value">
+                            <p class="dev-stat-title">Following</p>
+                            <p id="following-count" class="dev-stat-num">0</p>
+                        </div>
+                        <div class="dev-stat-value">
+                            <p class="dev-stat-title">Followers</p>
+                            <p id="followers-count" class="dev-stat-num">0</p>
+                        </div>
+                    </div>
+
+                    <div class="dev-details">
+                        <div class="dev-location dev-details-flex">
+                            <img src="Images/location-icon.svg" alt="">
+                            <p id="dev-location" class="dev-details-value">Location</p>
+                        </div>
+                        <div class="dev-twitter dev-details-flex">
+                            <img src="Images/link-icon.svg" alt="">
+                            <p id="dev-website" class="dev-details-value">E-mail Address</p>
+                        </div>
+                        <div class="dev-website dev-details-flex">
+                            <img src="Images/twitter-icon.svg" alt="">
+                            <p id="dev-twitter" class="dev-details-value">Twitter Username</p>
+                        </div>
+                        <div class="dev-organization dev-details-flex">
+                            <img src="Images/organization-icon.svg" alt="">
+                            <p id="dev-company" class="dev-details-value">Organization Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
