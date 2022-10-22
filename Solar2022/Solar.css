@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Radio+Canada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap');
+
+
+/* UTILITIES */
+
+body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+   }
+
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+    font-family: 'Radio Canada', sans-serif;
+    color: rgb(51,195,108);
+
+   }
+
+   .logo2 {
+    font-size: 19px;
+    font-family: 'Radio Canada', sans-serif;
+    color: rgb(51,195,108);
+
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    font-size: 18px;
+    margin-top: 13px;
+   }
+
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(0, 0, 0);
+    padding: 1em 0;
+    position: relative; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #ffffff;
+   }
+   .services:hover .dropdown {
+    display: block;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+   }
+
+   .menu1
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu2
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.menu3
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu4
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu5
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu6
+{
+    padding: 28.5px 20px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menu7
+{
+    padding: 23.99px 20px;
+    background-color:rgb(51,195,108);
+    color:rgb(255, 255, 255);
+
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.text{
+    position: absolute;
+    left: 50px;
+    top:174px;
+}
+
+.wild {
+    font-family: 'Francois One', sans-serif;
+    font-size: 90px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+
+.will {
+    color: rgb(255, 250, 250);
+     font-family: 'Yanone Kaffeesatz', sans-serif; 
+     font-size: 15px ;
+
+}
+
+.btn-group3
+{ 
+    background-color:rgb(51,195,108); 
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    border-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}  
+
+.num {
+    color: rgb(51,195,108);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 55.5px;
+}
+
+.txt {
+    color: black;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.nxt {
+    color: rgb(185,184,185);
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.twenty{
+    color: black;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.about {
+    color: rgb(51,195,108);
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container-fostrap {
+    display: table-cell;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .fostrap-logo {
+    width: 100px;
+    margin-bottom:15px
+  }
+  h1.heading {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #000000;
+    font-family: 'Radio Canada', sans-serif;
+  }
+  @media (min-width: 450px) {
+    h1.heading {
+      font-size: 3.55em;
+    }
+  }
+  @media (min-width: 760px) {
+    h1.heading {
+      font-size: 3.05em;
+    }
+  }
+  @media (min-width: 900px) {
+    h1.heading {
+      font-size: 34px;
+      margin: 0 0 0.3em;
+    }
+  } 
+  .card {
+    display: block; 
+      margin-bottom: 20px;
+      line-height: 1.42857143;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+      transition: box-shadow .25s; 
+  }
+  .card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .img-card {
+    width: 100%;
+    height:200px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    display:block;
+      overflow: hidden;
+  }
+  .img-card img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover; 
+    transition: all .25s ease;
+  } 
+  .card-content {
+    padding:15px;
+    text-align:left;
+  }
+  .card-title {
+    margin-top:0px;
+    font-weight: 700;
+    font-size: 1.65em;
+  }
+  .card-title a {
+    color: #000;
+    text-decoration: none !important;
+  }
+  .card-read-more {
+    border-top: 1px solid #D4D4D4;
+  }
+  .card-read-more a {
+    text-decoration: none !important;
+    padding:10px;
+    font-weight:600;
+    text-transform: uppercase
+  }
+
+  .read {
+    color:rgb(51,195,108); 
+    padding: 10px;
+    font-weight: 600;
+    display: inline-block;
+    border-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .btn5{
+    padding: 10px 20px;
+    background-color:rgb(51,195,108); 
+    color:#fff;
+   border-radius: 19px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
