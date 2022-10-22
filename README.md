@@ -1,6 +1,8 @@
 ## Hacktoberfest 2022
 # Welcome to Frontend Project Repo
 
+For more, visit our main repo : https://github.com/devvsakib/hacktoberfest-react-project
+
 ### Here you will find every esssetial PROJECT for a beginner Frontend Web Developer
 
 ### You must have acknowledge about 
