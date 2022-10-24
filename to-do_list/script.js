@@ -1,12 +1,12 @@
 document.getElementById("Addbtn").addEventListener("click",function(){
-    var task=document.getElementById("todo").value;
+    let task=document.getElementById("todo").value;
     if(task === "" || task === null)
     {
         alert("First, Enter some task");
     }
     else{
-    var old= document.getElementById("list").innerHTML;
-    var newrecord =`
+    let old= document.getElementById("list").innerHTML;
+    let newrecord =`
         <li>
         <table id="table" border=> 
         <tr>
@@ -42,8 +42,6 @@ function ongoing(target){
 
 function completed(target){
     target.parentElement.parentElement.parentElement.style=`background-color:green;color:white;`;
-    
-
 }
 
 function remove(target){
