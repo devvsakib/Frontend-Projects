@@ -1,6 +1,5 @@
 'use-strict';
 const input = document.querySelector('.input');
-const inputM = document.querySelector('.input-m');
 const displayTotal = document.querySelector('.result');
 const resultElevy = document.querySelector('.result-elevy');
 const networkFee = document.querySelector('.network');
