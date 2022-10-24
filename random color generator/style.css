@@ -1,0 +1,36 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+.content {
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 380px;
+  padding: 10px;
+  cursor: default;
+}
+
+.fa-copy {
+  color: black;
+  font-size: 5vh;
+  z-index: 99;
+  position: relative;
+  left: 60px;
+  margin-left: -30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    min-width: 300px;
+  }
+}
