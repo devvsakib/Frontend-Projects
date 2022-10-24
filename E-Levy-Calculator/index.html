@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">
+        <img class="img" src="logo.jpeg" alt="" />E-LEVY CALCULATOR
+      </h1>
+
+      <div class="form__row">
+        <select class="form__input--type">
+          <option value="select">Select Network</option>
+          <option value="vodafone">Vodafone</option>
+          <option value="MTN">MTN</option>
+        </select>
+      </div>
+    </div>
+    <div class="network__voda hidden">
+      <div>
+        <input class="input" type="number" name="amount" id="cash" /><br />
+      </div>
+      <div class="total-display">
+        <b> Total Amount:</b> <br />
+        <b class="result"></b><br />
+        E-Levy Fee:
+        <b class="result-elevy"></b><br />
+        Momo Fee:
+        <b class="network"></b>
+      </div>
+    </div>
+    <!-- <div class="network__mtn hidden">
+        <div>
+          <form action="">
+            <input class="input-m" type="number" name="amount" id="cash" /><br />
+          </form>
+        </div>
+        <div class="total-display-m">
+          <b> Total Amount:</b> <br>
+          <b class="result-m"></b>
+          E-Levy Fee: <br>
+          <b class="result-elevy-m"></b>
+           Momo Fee: <br>
+          <b class="network-m"></b>
+        </div> -->
+  </body>
+</html>
