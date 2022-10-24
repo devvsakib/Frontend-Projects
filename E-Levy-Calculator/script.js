@@ -10,7 +10,7 @@ const resultField = document.querySelector('.total-display');
 displayTotal.textContent = `GH¢ ${0}`;
 networkFee.textContent = `GH¢ ${0}`;
 
-input.addEventListener('input', function (e) {
+input.addEventListener('input', (e) => {
   e.preventDefault();
   const amount = Number(input.value);
   if (inputType.value === 'MTN') {
@@ -32,7 +32,7 @@ input.addEventListener('input', function (e) {
   }
 });
 
-inputType.addEventListener('change', function (e) {
+inputType.addEventListener('change', (e) => {
   e.preventDefault();
   if (inputType.value === 'vodafone') {
     input.value = '';
