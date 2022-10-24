@@ -1,6 +1,6 @@
 document.getElementById("Addbtn").addEventListener("click",function(){
     var task=document.getElementById("todo").value;
-    if(task=="" || task==null)
+    if(task === "" || task === null)
     {
         alert("First, Enter some task");
     }
