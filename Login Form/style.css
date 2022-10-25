@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("./images/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+  width: 30rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.header {
+  font-family: "Bebas Neue", cursive;
+  padding: 2rem 4rem;
+  border-bottom: 0.5rem solid #f0f0f0;
+  background-color: #f7f7f7;
+}
+.header h2 {
+  margin: 0;
+  text-align: center;
+}
+.form {
+  padding: 2rem 3rem;
+}
+.form-control {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.form-control input {
+  display: block;
+  border: 0.2rem solid #f0f0f0;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control i {
+  position: absolute;
+  top: 2.5rem;
+  right: 0.8rem;
+  visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  visibility: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+.form button {
+  background-color: #603f83ff;
+  width: 100%;
+  display: block;
+  border: 0.5rem solid #603f83ff;
+  color: #c7d3d4ff;
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3rem;
+}
