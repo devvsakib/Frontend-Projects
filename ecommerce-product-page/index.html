@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="devvsakib xavonsakib">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page | devvsakib</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row nav">
+      <div class="col-2">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="menuContainer">
+          <ul>
+            <li><a href="#">collections</a></li>
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="prof">
+          <div class="account_profile d-flex align-items-center justify-content-between">
+            <p id="qualty_number"></p>
+            <i onclick="showOff()" class="fa fa-cart-shopping" aria-hidden="true"></i>
+            <img onclick="showOff()" calss="pp" src="./assets/images/image-avatar.png" alt="">
+          </div>
+          <div id="cart_items" class="cart_items">
+            <div class="cart_title">
+              <h2>Cart</h2>
+          </div>
+          <div class="item_des">
+            <div class="item_title mt-3">
+              <h5>Your cart is emplty!</h5>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar DOne -->
+  <!-- Product Section -->
+  <div class="container contWid mt-auto align-items-center">
+    <div class="row flex-sm-column flex-lg-row  mt-4 align-items-sm-center prod align-items-center">
+      <div class="col-6 prod_prev_con">
+        <div class="prod_img">
+          <div class="prev_img">
+            <img id="prev_img" src="./assets/images/image-product-1.jpg" alt="">
+          </div>
+          <div id="more_img" class="mt-4 more_img d-flex justify-content-between">
+            <img class="active for_prev_demo bg_prod"  src="./assets/images/image-product-1.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-2.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-3.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-4.jpg" alt="">
+            <img class="for_prev_demo" src="./assets/images/image-product-5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mt-md-5">
+        <div class="prod_details">
+          <h5>sneakers company</h5>
+          <h1 class="mt-2">Fall limited edition sneakers</h1>
+          <p class="mt-5">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+            they'll withstand everything the weather can offer.</p>
+          <div class="prod_price mt-4">
+            <h3>$125.00</h3>
+            <span class="discount">50%</span>
+          </div>
+          <div class="prod_main_price">
+            <h4>$250.00</h4>
+          </div>
+          <div class="cart_buttons mt-5 d-flex">
+            <div class="quantity_btns">
+              <span id="prod_increase" disabled>+</span>
+              <span id="prod_quanty">1</span>
+              <span id="prod_decrease">-</span>
+            </div>
+            <div  id="add_to_cart" class="add_to_cart align-items-center d-flex">
+              <i class="fa fa-cart-shopping" aria-hidden="true"></i>
+              <p>Add to cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
