@@ -1,11 +1,26 @@
 const rowEl = document.getElementById("rowEl"); 
-let data  = null;
+
+// Function to fetch data from api and send to manageData().
+function getData(){
+fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
+    .then(response => response.json()
+    )
+    .then(data => {
+        //Data = data;
+        //console.log(data); // Prints result
+        manageData(data);
+    
+    })
+    .catch(error => console.error(error))
+}
 
 //  Function to manage data and set button link for each project.
 function manageData(data){
     data.forEach((array , idx) =>{
-        if(array.name[0]!==".")
+        //console.log(data.name);
+        if(array.name[0]!=".")
         {
+            //console.log(array.name);
             rowEl.innerHTML += `
             <div class="column">
                 <div id = "card-${idx}" class="card">
@@ -23,18 +38,6 @@ function manageData(data){
             `
         }
     })
-}
-
-// Function to fetch data from api and send to manageData().
-function getData(){
-fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
-    .then(response => response.json()
-    )
-    .then(data => {
-        manageData(data);
-    
-    })
-    .catch(error => alert(error))
 }
 
 getData()
