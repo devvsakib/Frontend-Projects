@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.headder{
+    z-index: 1;
+    width: 100vw;
+    background: rgb(240, 240, 240);
+    border: 1px solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-top:-0.5rem;
+    margin-left: -0.5rem;
+    position: sticky;
+    top:0;
+  }
+
+
+  .headder span{
+    z-index: 1;
+    height:fit-content ;
+    font-family: 'Dosis';
+    font-weight: 800;
+    text-align: center;
+    font-size: 5vh;
+    border:1px solid black;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    overflow: hidden;
+    
+  }
+
+
+ 
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 ;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(243, 117, 117) 50%, rgb(76, 128, 223) 100%);
+    border: 2px solid gold;
+    border-radius: 1rem;
+    height:20rem;
+    width:15rem;
+    line-height: 5rem;
+  }
+
+  .gitLink
+  {
+    margin-top: 5rem;
+  }
+  .card form{
+    padding-top: 5.8rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    word-wrap: break-word;
+  }
+
+
+  .button-29 {
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display:inline-block;
+    font-family: "JetBrains Mono",monospace;
+    height: auto;
+    min-height: 50px;
+    width:100%;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow:hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: initial;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+
+
+  
+  .button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  
+  .button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
