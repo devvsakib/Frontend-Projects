@@ -1,17 +1,5 @@
 const rowEl = document.getElementById("rowEl"); 
-getData()
-
-// Function to fetch data from api and send to manageData().
-function getData(){
-fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
-    .then(response => response.json()
-    )
-    .then(data => {
-        manageData(data);
-    
-    })
-    .catch(error => console.error(error))
-}
+let data  = null;
 
 //  Function to manage data and set button link for each project.
 function manageData(data){
@@ -37,9 +25,16 @@ function manageData(data){
     })
 }
 
+// Function to fetch data from api and send to manageData().
+function getData(){
+fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
+    .then(response => response.json()
+    )
+    .then(data => {
+        manageData(data);
+    
+    })
+    .catch(error => alert(error))
+}
 
-// var x = document.getElementById("link");
-// x.href = "https://devvsakib.github.io/Frontend-Projects/";
-
-
-
+getData()
