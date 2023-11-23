@@ -14,7 +14,7 @@ document.getElementById("Addbtn").addEventListener("click",function(){
             ${task}
             </td>
             <td>
-            <button id="ongoing" onclick="ongoing(this)">Ongoing</button>
+            <button id="ongoing" onclick="ongoing(this) ">Ongoing</button>
             </td><br>
             <tr>
             <td>

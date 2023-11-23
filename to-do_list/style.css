@@ -22,9 +22,10 @@ ul{
 }
 
 #Addbtn{
-    height: 50px;
+    height: 40px;
     color: white;
     background-color: darkcyan;
+    border-radius: 4px;
 }
 
 #ongoing{
