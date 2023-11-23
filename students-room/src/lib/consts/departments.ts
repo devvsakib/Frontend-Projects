@@ -1,0 +1,16 @@
+export let departments = [
+  "Biologia, Ecologia e Scienze della Terra",
+  "Chimica e Tecnologie Chimiche",
+  "Culture, Educazione e Società",
+  "Economia, Statistica e Finanza",
+  "Farmacia e Scienze della Salute e della Nutrizione",
+  "Fisica",
+  "Ingegneria Civile",
+  "Ingegneria dell’Ambiente",
+  "Ingegneria Informatica, Modellistica, Elettronica e Sistemistica",
+  "Ingegneria Meccanica, Energetica e Gestionale",
+  "Matematica e Informatica",
+  "Scienze Aziendali e Giuridiche",
+  "Scienze Politiche e Sociali",
+  "Studi Umanistici",
+];

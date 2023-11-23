@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .iframe_container{
+            overflow: hidden;
+            /* 16:9 aspect ratio */
+            padding-top: 56.25%;
+            position: relative;
+        }
+        .iframe_container iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe_container">
+        <iframe src="style.html" name="iframe_a" width="100%" style="border: none;"></iframe>
+    </div>
+</body>
+</html>

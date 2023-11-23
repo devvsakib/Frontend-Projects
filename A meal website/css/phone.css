@@ -1,0 +1,107 @@
+/* Nav */
+
+#navbar{
+  flex-direction: column;
+  width:300vw;
+  justify-content:center;
+}
+ #navbar ul li a{
+  font-size: 2.8rem;
+}
+#navbar::before{
+width :300vw;
+}
+button{
+
+
+ width:260px;
+   font-size: 2.2rem;
+   padding: 4px;
+   margin-top: 4px;
+    border-radius :1.4rem;
+  
+}
+#home{
+  width:230vw;
+  font-size: 2.6rem;
+}
+#home::before{
+  width:300vw;
+  height: 900px;
+}
+/* Services section */
+
+#services{
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40vw;
+}
+/* .h{
+  display: block;
+  margin-left:100vw;
+  font-size: 3.2rem;
+} */
+.h{
+  display:block;
+  margin-top : 40%;
+    /* text-align: center; */
+    font-size: 32px;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 120%;
+ }
+.box{
+  padding: 10px;
+  
+  width: 200vw;
+    margin: 20px;
+    height: 100vh;
+}
+.box img{
+  display:block;
+
+  width: 100vw;
+  height: 70vh;
+  margin:auto;
+  padding:0px;
+}
+.box img .img1{
+ height:60vh;
+}
+.srv{
+  font-size: 3.2em;
+}
+.box p{
+  font-size: 2.5em;
+}
+.h-primary {
+  
+  margin-left:140vw;
+  font-size: 3.2rem;
+}
+#contact::before{
+   width: 300%;
+  height: 64vh;
+  background-color: rgb(148, 142, 142);
+}
+.contactDetails{
+  width:280vw;
+ 
+}
+ 
+  #contact label {
+    display: block;
+    margin-left : 104vw;
+  }
+  .center{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sec {
+    display: block;
+    width: 120vw;
+    margin-left: 90vw;
+}
+.footer{
+  width:300%;
+}

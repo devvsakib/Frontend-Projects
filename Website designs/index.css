@@ -1,0 +1,236 @@
+body{
+    background-color:rgb(231, 231, 231);
+    font-size: 15px;
+}
+.container{
+    margin: 30px;
+    padding: 10px;
+    height: 640px;
+}
+/*Stylesheet*/
+.main{
+    background-color: white;
+}
+#menu a:link,#menu a:visited{
+    color: black;
+    text-decoration: none;
+    cursor:auto;
+}
+#defaultmenu a:link,#defaultmenu a:visited{
+    display: inline;
+    color: blue;
+    font-size: 16px;
+}
+/*Stylesheet 1*/
+.border{
+    border-radius: 4px;
+}
+#top{
+    background-color:rgb(45, 165, 75);
+    color: white;
+    margin: 20px;
+    padding: 3px 20px 20px;
+    line-height: 15px;
+}
+#left{
+    float: left;
+    width:25%;
+    margin-left: 10px;
+}
+#left a:link,#left a:visited{
+    width: 165px;
+    background-color: rgb(231, 231, 231);
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 5px 0px;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px rgb(180, 178, 178) solid;
+}
+#left a:hover{
+    background-color: white;
+}
+#left a:first-child{
+    background-color: rgb(45, 165, 75);
+    color: white;
+    font-weight: bold;
+}
+#mid{
+    float: left;
+    width:40%;
+}
+#mid a:link,#mid a:visited{
+    color: black;
+    display: inline;
+}
+#mid a:hover{
+    text-decoration: none;
+}
+
+#right{
+    background-color:rgb(67, 128, 219);
+    color: white;
+    float: right;
+    width: 25%;
+    margin-right: 45px;
+    padding: 20px;
+    height: 50%;
+    box-sizing: border-box;
+}
+#bottom{
+    float: right;
+    background-color: rgb(231, 231, 231);
+    font-size: 13px;
+    margin: 20px 40px;
+    padding: 15px 30px;
+    border: 1px rgb(180, 178, 178) solid;
+    height: 60px;
+    clear: both;
+}
+/*Stylesheet 2*/
+#one{
+    color: white;
+    font-size: 20px;
+    padding: 0px 20px;
+    margin-bottom: 35px;
+    line-height: 20px;
+}
+.two{
+    padding: 5px 20px 20px;
+}
+.two a:link,.two a:visited{
+    color: rgb(201,41,41);
+    text-decoration: none;
+}
+.two a:hover{
+    color: rgb(201,41,41);
+    text-decoration: underline;
+}
+#three{
+    background-color: rgb(248, 210, 248);
+    color: rgb(201, 41, 41);
+    font-size: 16px;
+}
+#four{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+#five{
+    margin: 40px;
+}
+#five a:link,#five a:visited{
+    background-color: white;
+    color: rgb(201, 41, 41);
+    text-decoration: none;
+    text-align: center;
+    padding: 7px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+#five a:hover{
+    background-color: rgb(201, 41, 41);
+    border: 1px solid white;
+    color: white;
+}
+#five a.active{
+    background-color: rgb(201, 41, 41);
+    border: 1px solid white;
+    color: white;
+}
+/* Stylesheet 3*/
+#main_page{
+    padding: 20px;
+}
+#top_link{
+    margin: 40px 0;
+}
+#top_link a:link,#top_link a:visited{
+    color: white;
+    background-color: rgb(94, 100, 100);
+    padding: 7px 30px;
+    margin: 0 3px;
+    text-decoration: none;
+
+}
+#top_link a.activelink{
+    background-color: rgb(45, 165, 75);
+    color: white;
+}
+#top_link a:hover{
+    background-color: rgb(153, 150, 150);
+}
+#link{
+    width: 80%;
+}
+#link a:link,#link a:visited{
+    color: black;
+}
+#link a:hover{
+    color: rgb(45, 165, 75);
+}
+#no-link{
+    background-color: rgb(231, 231, 231);
+    padding: 0px 10px 15px;
+    margin: 20px 0 15px;
+    border: 1px solid rgb(184, 189, 189);
+    box-sizing: border-box;
+}
+/* Stylesheet 4*/
+#div1{
+    background-color: black;
+    color: rgb(82, 206, 113);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 30px ;
+}
+#div2{
+    margin: 20px 0;
+    float: left;
+}
+#div2 a:link,#div2 a:visited{
+    color: rgb(82, 206, 113);
+    text-decoration: none;
+    line-height: 10px;
+}
+#div2 a:hover{
+    color: white;
+}
+#div2 a.active_link{
+    color: white;
+}
+#div3{
+    float: right;
+    width: 50%;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px 20px;
+    width: 35%;
+    margin-right: 60px;
+    border-radius: 5px;
+}
+#div4{
+    clear: both;
+    line-height: 25px;
+}
+#div4 a:link,#div4 a:visited{
+    color: white;
+    padding: 0 10px 0 0;
+}
+#div4 a:hover{
+    color: rgb(82, 206, 113);
+}
+#div5{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}

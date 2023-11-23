@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #061C35;
+  --gradient-primary: linear-gradient(92.41deg, #FFA500 0%, #FF5C3D 100%);
+  --gradient-card: linear-gradient(180deg, rgba(1, 21, 45, 0) 0%, #01152D 100%);
+  --tertiary-color: #FFA500;
+}
+
+body {
+  color: white;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.rotateImage {
+  animation: rotateMe 20s infinite forwards linear;
+}
+
+@keyframes rotateMe {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.partners:last-child {
+  border: none;
+}
+
+
+
+.slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider>div {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-scroll {
+  transform: translateX(0%);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.slider-scroll-right {
+  transform: translateX(-100%);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.slider-inner {
+  transition: transform 0.3s ease-in-out;
+  /* Added the transition property for smooth sliding */
+}
+
+.slider-scroll button {
+  opacity: 0.7;
+}
+
+.slider-scroll button.active {
+  opacity: 1;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  color: #fff;
+  background: var(--gradient-primary);
+  padding: 10px;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 20px !important;
+}

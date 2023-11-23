@@ -1,0 +1,239 @@
+/* CSS Reset */
+*{
+    margin : 0;
+    padding : 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+#navbar{
+    display : flex;
+    align-items: center;
+     position: sticky;
+    top:0px;
+    
+}
+#navbar::before{
+    content : "";
+    background-color: rgba(0, 0, 0, 0.689);
+    position : absolute;
+    top:0px;
+    left:0px;
+  height:100%;
+   width :100%;
+  
+    opacity : 0.7;
+    z-index:-1;
+  }
+
+
+
+#navbar ul{
+    display : flex;
+    margin: 24px  0px;
+    padding: 4px;
+ }
+
+#navbar ul li{
+    list-style:none;
+  
+}
+#navbar ul li a{
+    text-decoration: none;
+    margin : 2px 2px;
+    padding : 16px;
+    color : white;
+    font-family: 'Balthazar', serif;
+    margin : 2px 2px;
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+       font-size :1.1rem;
+    display:block;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 23px;
+    margin : 2px 2px;
+    padding: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: 'Balthazar', serif;
+    font-size: 1.1rem;
+}
+#logo img{
+   width : 70px;
+   height :70px;
+   margin : 0px 20px;
+  }
+ /* HOME STYLING */
+ #home::before{
+    content:"";
+    background:url(../img/1.jpg) no-repeat center/cover;
+    position : absolute;
+   display: flex;
+    top:0px;
+    left:0px;
+    height: 640px;
+    width :100%;
+    opacity : 0.7;
+    z-index:-1;
+       }
+ #home{
+    display : flex;
+    flex-direction: column;
+    color:white;
+      justify-content:center;
+    text-align :center;
+    font-size:1.3rem;
+    margin :  30px 40px;
+    margin-bottom: 2px;
+    padding: 44px;
+    padding-bottom:0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    height : 450px;
+    
+ }
+ button{
+   display: block ;
+  margin:auto;
+  width:200px;
+    font-size: 1.2rem;
+         cursor:pointer;
+     border-radius :1rem;
+     background-color: rgba(172, 71, 71, 0.676);
+     font-family: 'Baloo Bhai 2', cursive;
+ }
+ /* Services */
+ #services {
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 70px;
+ }
+ .box img{
+  display: block;
+  margin:auto;
+    height : 160px;
+    width : 200px;
+ }
+ .box{
+    height : 280px;
+    width : 400px;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    border : 2px solid brown;
+    margin : 15px;
+    padding: 18px;
+    border-radius: 1.2rem;
+    text-align:center;
+    justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgb(242, 230, 214);
+ }
+.box img .img1{
+    width :400px;
+ }
+ #services{
+  
+    max-width:100%;
+    max-height:100%;
+    display: flex;
+   
+    justify-content: center;
+    text-align: center;
+ }
+ .h{
+  margin-top : 70px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ /* utility classes */
+ .h-primary{
+   font-size: 2rem; 
+    font-family: 'Baloo Bhai 2', cursive;
+ }
+ .center{
+   text-align: center;
+   padding: 20px;
+ }
+ #clt img{
+   height : 150px;
+   width : 150px;
+   margin : 26px;
+   margin-bottom: 0px;
+   padding:10px;
+
+ }
+ .sec{
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   
+ }
+  #clt::before{
+   content:"";
+   background: url(../img/bg,jpg.jpg) no-repeat center/cover;
+   position : absolute;
+  
+  left:0px;
+   max-height: 200px;
+   max-width :100%;
+   opacity : 0.4;
+   z-index:-1;
+   margin:0px;
+ }
+ .contact-box{
+   display : flex;
+   font-size: 1rem;
+   font-family:'Baloo Bhai 2', cursive ;
+    flex-direction: column;
+     
+ }
+ .contactDetails input{
+   text-align:center;
+   
+    margin: 8px ;
+   padding: 6px;
+   width: 550px;
+   border-radius: 1.2rem;
+   display:block;
+   margin:auto;
+ }
+ textarea{
+   display: block;
+   margin: auto;
+ }
+ #contact::before{
+   content: "";
+   background: url(../img/ft1.jpg) no-repeat center center/cover;
+   position: absolute;
+ background-color: rgb(120, 116, 116);
+   left:0px;
+   height:56%;
+   width:100%;
+   opacity :0.4;
+   z-index:-1;
+ }
+ .footer{
+  background-color: black;
+     height: 30px;
+  width:100%;
+ color:white;
+ text-align: center;
+ 
+ }
+ #contact label{
+   display:block;
+   margin:  0px 480px; 
+
+ }
+.footer{
+  display:block;
+  position:relative;
+  bottom:0px;
+  left:0px;
+}
