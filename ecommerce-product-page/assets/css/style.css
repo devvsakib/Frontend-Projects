@@ -1,0 +1,328 @@
+/* ============= Deafult CSS for GOOD :) =============== */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+/* ============= ROOT =============== */
+:root {
+  --color-orange: hsl(26, 100%, 55%);
+  --color-pale-orage: hsl(25, 100%, 94%);
+  --very-vark-blue: hsl(220, 13%, 13%);
+  --dark_grayish_blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --font-def: 16px;
+  --font-family: "DM Sans";
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+/* ============= Default TAG CSS  =============== */
+body {
+  font-size: var(--font-def);
+  font-family: var(--font-family);
+}
+
+p,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ============= Navbar CSS  =============== */
+.container > .nav {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 25px 0;
+}
+
+@media (max-width: 776px) {
+  .menuContainer {
+    display: none;
+  }
+}
+.menuContainer ul {
+  display: flex;
+}
+.menuContainer ul li {
+  margin: 0 15px;
+  text-transform: capitalize;
+}
+.menuContainer ul li a {
+  color: var(--dark_grayish_blue);
+  position: relative;
+  height: 100%;
+}
+.menuContainer ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2.2rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 2px;
+  border-bottom: 4px solid orange;
+  transform: scaleX(0);
+  transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.95) 0s;
+}
+.menuContainer ul li a:hover:before {
+  transform: scaleX(1);
+  color: var(--very-vark-blue);
+  opacity: 1;
+}
+
+.prof {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.prof .account_profile {
+  width: 90px;
+}
+.prof .account_profile #qualty_number {
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+  right: 3.6rem;
+  display: none;
+  bottom: 0;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+  border: 2px solid white;
+}
+.prof .account_profile i {
+  position: relative;
+  font-size: 17px;
+  color: var(--dark_grayish_blue);
+  transition: all 0.3s ease-in-out;
+}
+.prof .account_profile i:hover {
+  color: var(--black);
+  cursor: pointer;
+}
+.prof .account_profile img {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 40px;
+}
+.prof .account_profile img:hover {
+  cursor: pointer;
+}
+
+.cart_items {
+  display: none;
+  width: 350px;
+  position: absolute;
+  left: -10rem;
+  right: 0;
+  top: 3rem;
+  border-radius: 10px;
+  padding: 30px;
+  background: var(--white);
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1215686275);
+}
+.cart_items .cart_title h2 {
+  color: var(--very-vark-blue);
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-weight: var(--font-bold);
+  border-bottom: 1px solid #ddd;
+}
+.cart_items .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.cart_items .items .item_img {
+  margin-right: 10px;
+}
+.cart_items .items .item_img img {
+  width: 50px;
+  border-radius: 10px;
+}
+.cart_items .items .item_des {
+  padding-right: 10px;
+}
+.cart_items .items .item_des .item_title h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark_grayish_blue);
+}
+.cart_items .items .item_des .item_quantity span {
+  color: var(--dark_grayish_blue);
+}
+.cart_items .items .item_des .item_quantity span > span {
+  color: var(--black);
+  font-weight: var(--font-bold);
+}
+.cart_items .items .item_delete i {
+  color: var(--grayish-blue);
+  transition: all 0.3s ease-in-out;
+}
+.cart_items .items .item_delete:hover i {
+  cursor: pointer;
+  color: var(--very-vark-blue);
+}
+.cart_items .cart_btn {
+  margin-top: 25px;
+}
+.cart_items .cart_btn button {
+  width: 100%;
+  border: none;
+  background-color: var(--color-orange);
+  padding: 10px 0;
+  color: var(--white);
+  font-weight: var(--font-bold);
+  border-radius: 10px;
+}
+
+.showoff {
+  display: block;
+}
+
+.dnone {
+  display: block;
+}
+
+/*========== Product Secion CSS ==========*/
+.contWid {
+  width: 1080px;
+}
+@media (max-width: 575px) {
+  .contWid {
+    display: contents;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .prod_prev_con {
+    display: contents;
+  }
+}
+
+.prod_img {
+  width: 410px;
+}
+.prod_img .more_img img {
+  width: 80px;
+  border-radius: 10px;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.prev_img img {
+  width: 420px;
+  border-radius: 10px;
+}
+
+.active {
+  opacity: 0.75;
+  border: 2px solid var(--color-orange);
+}
+
+.prod_details h5 {
+  text-transform: uppercase;
+  color: var(--color-orange);
+  font-weight: var(--font-bold);
+  font-size: 16px;
+}
+.prod_details h1 {
+  font-weight: var(--font-bold);
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.prod_details p {
+  font-weight: 500;
+  color: var(--dark_grayish_blue);
+}
+.prod_details .prod_price {
+  display: flex;
+  align-items: center;
+}
+.prod_details .prod_price h3 {
+  font-weight: var(--font-bold);
+}
+.prod_details .prod_price span {
+  color: var(--color-orange);
+  background-color: var(--color-pale-orage);
+  margin-left: 20px;
+  padding: 0 10px;
+  font-weight: var(--font-bold);
+  border-radius: 5px;
+}
+.prod_details .prod_main_price h4 {
+  font-size: 16px;
+  margin-top: 5px;
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+  font-weight: var(--font-bold);
+}
+.prod_details .cart_buttons .quantity_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue);
+  font-weight: var(--font-bold);
+}
+.prod_details .cart_buttons .quantity_btns #prod_decrease,
+.prod_details .cart_buttons .quantity_btns #prod_increase {
+  font-weight: 700;
+  color: var(--color-orange);
+  cursor: pointer;
+  padding: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.prod_details .cart_buttons .add_to_cart {
+  width: calc(100% - 150px);
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-orange);
+  padding: 15px 50px;
+  color: var(--white);
+  font-weight: var(--font-bold);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.prod_details .cart_buttons .add_to_cart p {
+  margin-left: 10px;
+  color: var(--white);
+}/*# sourceMappingURL=style.css.map */
