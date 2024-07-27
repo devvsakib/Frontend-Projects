@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800);
-* {
-    box-sizing: border-box;
-  }
-  
+
   body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
@@ -48,112 +45,110 @@
     
   }
 
-
- 
   
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 2.5rem;
-    padding-bottom: 1rem;
-  }
+/* display card in grid 4 in a row */
+.row {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px; 
+  padding: 40px; 
+}
 
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 ;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background: rgb(0,212,255);
-    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(243, 117, 117) 50%, rgb(76, 128, 223) 100%);
-    border: 2px solid gold;
-    border-radius: 1rem;
-    height:20rem;
-    width:15rem;
-    line-height: 5rem;
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background: radial-gradient(circle, #ffffff 0%, #f0f4f8 50%, #dbe3e6 100%);
+  border: 2px solid #e2e8f0; 
+  border-radius: 1rem;
+  height: 20rem;
+  width: 100%; 
+  line-height: 5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
 
-  .gitLink
-  {
-    margin-top: 5rem;
-  }
-  .card form{
-    padding-top: 5.8rem;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-justify: auto;
-    word-wrap: break-word;
-  }
+.card:hover {
+  transform: translateY(-8px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa; 
+}
 
 
-  .button-29 {
-    appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border: 0;
-    border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display:inline-block;
-    font-family: "JetBrains Mono",monospace;
-    height: auto;
-    min-height: 50px;
-    width:100%;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow:hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: initial;
-    will-change: box-shadow,transform;
-    font-size: 18px;
-  }
+.gitLink {
+  margin-top: 5rem;
+}
 
+.card form {
+  padding-top: 5.8rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+}
 
-  
-  .button-29:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  }
-  
-  .button-29:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
-  }
+.button-29 {
+  appearance: none;
+  background-image: radial-gradient(circle at 100% 0, #a0aec0 0%, #718096 100%); 
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  height: auto;
+  min-height: 50px;
+  width: 100%;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: initial;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
 
-  
-  .button-29:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
-  }
+.button-29:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  background-color: #4a5568; 
+}
 
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+.button-29:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  background-color: #2d3748; 
+}
+
+/* Responsive styling for cards */
+@media screen and (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(3, 1fr); 
   }
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr; 
+  }
+}
