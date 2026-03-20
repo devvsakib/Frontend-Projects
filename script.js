@@ -1,30 +1,29 @@
-const rowEl = document.getElementById("rowEl"); 
+const rowEl = document.getElementById("rowEl");
 
 // Function to fetch data from api and send to manageData().
-function getData(){
-fetch('https://api.github.com/repos/codeXsidd/Frontend-Projects/contents')
-    .then(response => response.json()
-    )
-    .then(data => {
-        //Data = data;
-        //console.log(data); // Prints result
-        manageData(data);
-    
-    })
-    .catch(error => console.error(error))
+function getData() {
+    fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
+        .then(response => response.json()
+        )
+        .then(data => {
+            //Data = data;
+            //console.log(data); // Prints result
+            manageData(data);
+
+        })
+        .catch(error => console.error(error))
 }
 
 //  Function to manage data and set button link for each project.
-function manageData(data){
-    data.forEach((array , idx) =>{
+function manageData(data) {
+    data.forEach((array, idx) => {
         //console.log(data.name);
-        if(array.name[0]!=".")
-        {
+        if (array.name[0] != ".") {
             //console.log(array.name);
             rowEl.innerHTML += `
             <div class="column">
                 <div id = "card-${idx}" class="card">
-                    <form action='https://codeXsidd.github.io/Frontend-Projects/${array.name}'>
+                    <form action='https://devvsakib.github.io/Frontend-Projects/${array.name}'>
                         <input id="button-29" class="button-29" type="submit" value="${array.name}" />
                     </form>
                     

@@ -15,7 +15,7 @@
 }
 
 
-.headder{
+.header{
     z-index: 1;
     width: 100vw;
     background: rgb(240, 240, 240);
@@ -31,7 +31,7 @@
   }
 
 
-  .headder span{
+  .header span{
     z-index: 1;
     height:fit-content ;
     font-family: 'Dosis';
@@ -41,6 +41,7 @@
     border:1px solid black;
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
