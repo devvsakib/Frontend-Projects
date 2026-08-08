@@ -1,4 +1,4 @@
-## Hacktoberfest 2022
+## Hacktoberfest 2026
 # Welcome to Frontend Project Repo
 
 For more, visit our main repo : https://github.com/devvsakib/hacktoberfest-react-project

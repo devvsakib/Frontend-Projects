@@ -237,3 +237,27 @@ html{
   bottom:0px;
   left:0px;
 }
+
+#clt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#clt a {
+    display: inline-block;
+}
+
+#clt img {
+    width: 120px;      
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clt img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
