@@ -1,22 +1,42 @@
 const rowEl = document.getElementById("rowEl"); 
 
 // Function to fetch data from api and send to manageData().
-function getData(){
-fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
-    .then(response => response.json()
-    )
-    .then(data => {
-        //Data = data;
-        //console.log(data); // Prints result
-        manageData(data);
-    
-    })
-    .catch(error => console.error(error))
+function getData() {
+    fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`GitHub API error: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (!Array.isArray(data)) {
+                throw new Error("Invalid response received from GitHub API.");
+            }
+
+            manageData(data);
+        })
+        .catch(error => {
+            console.error("Failed to load projects:", error);
+
+            rowEl.innerHTML = `
+                <div class="error-message">
+                    <h3>Unable to load projects</h3>
+                    <p>Please try again later.</p>
+                </div>
+            `;
+        });
 }
 
 //  Function to manage data and set button link for each project.
-function manageData(data){
-    data.forEach((array , idx) =>{
+function manageData(data) {
+
+    if (!Array.isArray(data)) {
+        console.error("Expected an array but received:", data);
+        return;
+    }
+
+    data.forEach((array, idx) => {
         //console.log(data.name);
         if(array.name[0]!=".")
         {
